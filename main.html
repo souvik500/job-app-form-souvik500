@@ -5,8 +5,49 @@
 <head>
 	<link rel="stylesheet" href="styles.css">
 </head>
-
+<!-- Name*
+Email*
+Gender*(radio)
+Laptop Brands(options : [Apple, Asus, HP])
+Age*
+DOB*
+Password*
+submit button. -->
 <body>
+
+	<section>
+		<form action="#" method="post">
+			<label for="name">Name*</label>
+			<input type="text" name="name" id="name" placeholder="Name" required> <br>
+			<label for="email">Email*</label>
+			<input type="email" name="email" id="email" placeholder="Email" required> <br>
+			<label for="name">Gender*</label>
+			<input type="radio" name="gender" id="gender_m " required> Male
+			<input type="radio" name="gender" id="gender_f" required> FeMale <br>
+			<label for="brands">Laptop Brands*</label>
+			<select name="laptop" id="laptop">
+				<option selected disabled>--Please choose an option--</option>
+				<option value="Apple">Apple</option>
+				<option value="Asus">Asus</option>
+				<option value="Hp">HP</option>
+			</select> <br>
+			<label for="age">Age*</label>
+			<input type="number" name="age" id="age" placeholder="Age" required> <br>
+			<label for="dob">DOB*</label>
+			<input type="date" name="dob" id="dob" required> <br>
+			
+			<label for="password">Password*</label>
+			<input type="password" name="password" id="password" placeholder="Password" required> <br>
+	
+			<input type="checkbox" name="tos" id="tos" required> 
+			<label for="tos">I agree to the TOS</label> <br>
+			
+			<button type="submit">Submit</button>
+	
+			
+		</form>
+	</section>
+
 	<!-- the entire body must be written by student -->
     <script type="text/javascript" src="./script.js">
 </script>
